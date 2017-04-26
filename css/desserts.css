@@ -1,0 +1,58 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family:'Open Sans',sans-serif,arial,helvetica,verdana;
+    background-color: black;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+header {
+    padding-top: 40px;
+}
+
+footer h4 {
+    text-align: left;
+}
+footer a {
+    font-size: medium;
+    text-decoration: underline;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    font-size: medium;
+    color: whitesmoke;
+}
+
+.cake_background {
+    background-image: url("../images/cakes/cake(01).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cookie_background {
+    background-image: url("../images/cookies/20140225_012907.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pastries_background {
+    background-image: url("../images/others/pastries(1).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pies_background {
+    background-image: url("../images/pies/pie(1).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

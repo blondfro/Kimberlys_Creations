@@ -1,0 +1,35 @@
+.navbar-inverse {
+    background-color: purple;
+}
+.nav a {
+    font-size: 20px;
+}
+
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: mediumpurple;
+    color: white;
+    padding: 20px 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: mediumpurple;
+    color: white;
+    padding: 20px 20px;
+}
+footer a{
+    font-size: x-large;
+    color: white;
+}
+
+.row {
+    padding: 40px;
+}

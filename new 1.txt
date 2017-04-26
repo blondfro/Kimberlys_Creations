@@ -1,0 +1,65 @@
+http://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
+
+
+s there any way to have multiple distinct HTML pages contained within a single HTML file? For example, suppose I have a website with two pages:
+
+Page 1 : click here for page 2
+
+and
+
+Page 2 : click here for page 1
+
+Can I create a single HTML file that embeds simple static HTML for both pages but only displays one at a time? My actual pages are of course more complicated with images, tables and javascript to expand table rows. I would prefer to avoid too much script code. Thanks!
+html
+shareimprove this question
+	
+asked Nov 21 '11 at 11:34
+paperjam
+3,07973359
+	
+   	 
+	
+why would you want to avoid two hmtl pages? – Tim B James Nov 21 '11 at 11:37
+   	 
+	
+I have a program that dumps thousands of small, interlinked HTML files as debug output. It would be much more convenient to have just one file output. – paperjam Nov 21 '11 at 11:40
+3 	 
+	
+"why would you want to" are non-constructive questions. Suppose I want to give someone a single "foo.html" file which appears to have multiple pages inside it, rather than a "foo.zip" which they have to unpack somewhere and then find the "index.html" in. – Kaz Jun 3 '16 at 15:10
+add a comment
+7 Answers
+active
+oldest
+votes
+up vote
+20
+down vote
+accepted
+	
+
+Well, you could, but you probably just want to have two sets of content in the same page, and switch between them. Example:
+
+<html>
+<head>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div id="Page1">
+    Content of page 1
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+  </div>
+
+  <div id="Page2" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
+
+</body>
+</html>

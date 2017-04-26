@@ -1,0 +1,6 @@
+multiple jssor sliders in 1 html help:
+
+https://www.experts-exchange.com/questions/28442982/Multiple-JQuery-Sliders-on-one-page.html
+
+http://stackoverflow.com/questions/22466300/jssor-non-jquery-slider-multiple-slider-on-one-page
+
